@@ -1,0 +1,120 @@
+﻿/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #007bff, #00bcd4);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
+
+header img {
+    max-width: 800px;
+    max-height: 80px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+    form h3 {
+        margin-bottom: 10px;
+    }
+
+    form input[type='text'],
+    form input[type='number'],
+    form select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    form input[type='submit'] {
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+        form input[type='submit']:hover {
+            background-color: #0056b3;
+        }
+
+        form input[type='submit']:focus {
+            outline: none;
+        }
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* Edit form styles */
+#editForm {
+    display: none;
+    margin-bottom: 20px;
+}
+
+    /* Add and Edit buttons styles */
+    #addForm input[type='submit'],
+    #editForm input[type='submit'],
+    #editForm input[type='button'] {
+        width: 48%;
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        margin-right: 2%;
+    }
+
+        #addForm input[type='submit']:hover,
+        #editForm input[type='submit']:hover,
+        #editForm input[type='button']:hover {
+            background-color: #0056b3;
+        }
+
+        #addForm input[type='submit']:focus,
+        #editForm input[type='submit']:focus,
+        #editForm input[type='button']:focus {
+            outline: none;
+        }
+
+    /* Cancel button styles */
+    #editForm input[type='button'] {
+        background-color: #dc3545;
+    }
+
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+    .col-4, .col-8 {
+        width: 100%;
+    }
+}
